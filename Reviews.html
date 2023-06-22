@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+<head>
+   
+<title>Reviews</title>
+<ul class="navbar">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="Services.html">Services </a></li>
+    <li><a Class="active"href="#Reviews.html">Reviews</a></li>
+    <li><a href="Projects.html">Projects</a></li>
+    <li><a href="Certificate.html">Certificate</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</head>
+<body>
+   <!-- Main Container for Clients Review -->
+   <div class="container">
+    <h2> My Happy Clients </h2>
+    <p class="description">Don't judge me on my best projects , judge me on my bad projects beacuse there are none!!!</p>
+
+    <!-- Clients Review Section -->
+    <div class="reviewSection">
+
+    <!-- Clients Review-1 Section Starts from Here  -->
+        <div class="reviewItem">
+            <div class="top">
+                <div class="clientImage">
+                    <img src="Photos/pic.jpeg" alt="">
+                    <span>Ozone Baral</span>
+                </div>
+                <ul>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-regular fa-star"></i></li>
+                    <li><i class="fa-regular fa-star"></i></li>
+                </ul>
+            </div>
+            <article>
+                <p class="review">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit beatae ipsa
+                    voluptatibus perferendis quos eaque nemo error tempora harum quas, laudantium tenetur, neque,
+                    facere exercitationem!</p>
+                <p>jul 19,2022</p>
+            </article>
+        </div>
+
+    <!-- Clients Review-2 Section Starts from Here  -->
+        <div class="reviewItem">
+            <div class="top">
+                <div class="clientImage">
+                    <img src="photos/pic.jpeg" alt="">
+                    <span>Ozone Baral</span>
+                </div>
+                <ul>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-regular fa-star"></i></li>
+                    <li><i class="fa-regular fa-star"></i></li>
+                </ul>
+            </div>
+            <article>
+                <p class="review">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit beatae ipsa
+                    voluptatibus perferendis quos eaque nemo error tempora harum quas, laudantium tenetur, neque,
+                    facere exercitationem!</p>
+                <p>jan 01, 2023</p>
+            </article>
+        </div>
+
+    <!-- Clients Review-3 Section Starts from Here  -->
+        <div class="reviewItem">
+            <div class="top">
+                <div class="clientImage">
+                    <img src="Photos/pic.jpeg" alt="">
+                    <span>Ozone Baral</span>
+                </div>
+                <ul>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-regular fa-star"></i></li>
+                    <li><i class="fa-regular fa-star"></i></li>
+                </ul>
+            </div>
+            <article>
+                <p class="review">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit beatae ipsa
+                    voluptatibus perferendis quos eaque nemo error tempora harum quas, laudantium tenetur, neque,
+                    facere exercitationem!</p>
+                <p>Feb 7, 2023</p>
+            </article>
+        </div>
+    </div>
+</div>
+  
+ 
+<!-- form section -->
+
+<div class="contact-forms"  >
+    <form onsubmit="validateForm();" name="messageForm">
+    <h1 style="padding:40px; font-family: serif;">Feedback</h1>
+       <h4 style="text-align:center;">"We all need people who will give us feedback. That’s how we improve."</h4>                     
+   <div class="contact-form">
+       <input type="text" class="contact-form-text" placeholder="Your name" name="name">
+       <input type="radio" name="genderDetails" value="male" checked>Male
+       <input type="radio" name="genderDetails" value="female">Female
+       <input type="radio" name="genderDetails" value="female">Assholes
+       
+       <br>
+       <input type="email" class="contact-form-text" placeholder="Your email" name="email">
+       
+       <input type="text" class="contact-form-text" placeholder="Your phone" name="phone">
+       <textarea class="contact-form-text" placeholder="Your message" name="message"></textarea>
+       <input type="submit" class="contact-form-btn" value="Send message"> 
+     </form> 
+   </div>  
+       
+</br>
+</br>   
+
+</div>
+</br>
+  <style>
+    h4{
+      color: antiquewhite;
+    }
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #090921;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.description {
+    text-align: center;
+    width: 43%;
+}
+
+.clientImage {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.clientImage span {
+    margin-left: 10px;
+}
+
+.clientImage img {
+    width: 40px;
+}
+
+.reviewSection {
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.reviewItem {
+    width: 300px;
+    padding: 10px;
+    margin: 1rem;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #10102a;
+    border: 1px solid #10102a;
+    transition: all .2s linear;
+}
+
+.reviewItem:hover {
+    border-color: aqua;
+    transform: scale(1.01);
+    background-color: #090921;
+    box-shadow: 0 0px 5px 0px #cbc0c0;
+}
+
+.top {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top ul {
+    display: flex;
+    list-style: none;
+}
+
+.top ul li {
+    padding-left: 4px;
+}
+
+article p {
+    font-size: 15px;
+    font-weight: 100;
+    margin-bottom: 1rem;
+    font-family: system-ui;
+}
+
+
+@media screen and (max-width:700px) {
+    .container {
+        height: auto;
+    }
+
+    .description {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .reviewSection {
+        padding: 0;
+    }
+
+    .reviewItem {
+        width: 100%;
+    }
+
+    .clientImage {
+        margin-bottom: 0.6rem;
+    }
+
+    .top {
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+     
+  
+          body {
+            margin: 0;
+            padding: 0;
+            font-family: "montserrat",sans-serif;
+              }
+            
+    .contact-forms{
+            background-image:url("photos/3.jpg");
+            background-size: cover;
+            padding: 5px 0;
+            padding-bottom: 0px;
+}
+    
+
+    .contact-forms  h1{
+            text-align: center;
+            color: antiquewhite;
+
+}
+    .contact-forms p{
+            text-align: center;
+            color: antiquewhite;
+    
+}       
+    .border{
+            width: 100px;
+            height: 10px;
+            background: #34495e;
+            margin: 40px auto;
+}
+
+    .contact-form{
+            max-width: 600px;
+            margin: auto;
+            padding: 0 10px;
+            overflow: hidden;
+}
+
+    .contact-form-text{
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+            margin: 16px 0;
+            border: 0;
+            background: rgb(85, 65, 59);
+            padding: 20px 40px;
+            outline: none;
+            color: #ddd;
+            transition: 0.5s;
+}
+    .contact-form-text:focus{
+            box-shadow: 0 0 10px 5px #7daae6;
+}
+    textarea.contact-form-text{
+            resize: none;
+            height: 125px;
+}
+    .contact-form-btn{
+            float: right;
+            border: 0;
+            background: #34495e;
+            color: #fff;
+            padding: 12px 50px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: 0.5s;
+}
+    .contact-form-btn:hover{
+            background: #3af83a;
+}
+    .search-box{
+      padding-left: 1000px;
+    }
+    body{
+      background-color: rgb(50, 47, 47);
+    }
+ 
+       
+        
+  </style>
+  <script>
+    
+// js for form
+function validateForm() {
+    var name = document.forms["messageForm"]["name"].value;
+    var phone = document.forms["messageForm"]["phone"].value;
+   
+    var email = document.forms["messageForm"]["email"].value;
+    
+    var message = document.forms["messageForm"]["message"].value;
+    
+    if(name=="" || phone == "" ||  email == "" ||message == "" ) {
+      alert("Empty Fields found . Please fill the fields and try submitting Again.");
+    }
+    else{
+      alert("Thankyou for your Valuable Feedback.");
+    }
+}
+
+var variableName = document.getElementById("buttonID");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+            variableName.style.display = "block";
+    } else {
+            variableName.style.display = "none";
+    }
+}
+
+function functionName() {
+    document.body.scrollTop = 0; //For Safari
+    document.documentElement.scrollTop = 0; //For Chrome
+}
+  </script>
+    
+
+</body>
+<footer>
+  <p>&copy; 2023 Ozone Baral. All Rights Reserved.</p>
+</footer>
+
+</html>
