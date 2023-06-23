@@ -1,29 +1,31 @@
 body {
   margin: 0;
-  padding:0;
+  padding: 0;
   background: #262626;
 }
 
-ula {
+.ula {
   display: flex;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  flex-wrap: wrap; /* Allow icons to wrap on smaller screens */
+  justify-content: center; /* Center the icons horizontally */
+  align-items: center; /* Center the icons vertically */
+  max-width: 800px; /* Adjust the maximum width as needed */
+  margin: 0 auto; /* Center the icons horizontally */
+  padding: 20px; /* Add padding to the container */
 }
 
-ula li {
+.ula li {
   list-style: none;
 }
 
-ula li a {
+.ula li a {
   width: 80px;
   height: 80px;
   background-color: #fff;
   text-align: center;
   line-height: 80px;
   font-size: 35px;
-  margin: 0 10px;
+  margin: 10px; /* Add margin around each icon */
   display: block;
   border-radius: 50%;
   position: relative;
@@ -32,20 +34,19 @@ ula li a {
   z-index: 1;
 }
 
-ula li a .icon {
+.ula li a .icon {
   position: relative;
   color: #262626;
   transition: .5s;
   z-index: 3;
 }
 
-ula li a:hover .icon {
+.ula li a:hover .icon {
   color: #fff;
-  transform: rotateY(360deg) ;
-  
+  transform: rotateY(360deg);
 }
 
-ula li a:before {
+.ula li a:before {
   content: "";
   position: absolute;
   top: 100%;
@@ -57,28 +58,40 @@ ula li a:before {
   z-index: 2;
 }
 
-ula li a:hover:before {
+.ula li a:hover:before {
   top: 0;
 }
 
-ula li:nth-child(1) a:before{
+.ula li:nth-child(1) a:before {
   background: #3b5999;
 }
 
-ula li:nth-child(2) a:before{
+.ula li:nth-child(2) a:before {
   background: #55acee;
 }
 
-ula li:nth-child(3) a:before {
+.ula li:nth-child(3) a:before {
   background: #0077b5;
 }
 
-ula li:nth-child(4) a:before {
+.ula li:nth-child(4) a:before {
   background: #dd4b39;
 }
-ula li:nth-child(5) a:before {
+
+.ula li:nth-child(5) a:before {
   background: #0b0b0b;
 }
-ula li:nth-child(6) a:before {
+
+.ula li:nth-child(6) a:before {
   background: #fbad50;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 480px) {
+  .ula li a {
+    width: 60px; /* Adjust the width for smaller screens */
+    height: 60px; /* Adjust the height for smaller screens */
+    line-height: 60px; /* Adjust the line height for smaller screens */
+    font-size: 30px; /* Adjust the font size for smaller screens */
+  }
 }
