@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     //variables
-    var words=[" Web Designer","  Digital Marketer"," Developer","FreeLancer","Youtuber","Graphics Designer"],
+    var words=[" Web Designer","  Digital Marketer","JAVA Developer","Python Developer","FreeLancer","Youtuber","Graphics Designer"],
     part,
     i=0,
     offset=0,
