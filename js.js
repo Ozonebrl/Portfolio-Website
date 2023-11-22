@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
     forwards=true,
     skip_count=0,
     skip_delay=17,
-    speed=10;
+    speed=50;
     
     const CWAutoTyping=document.querySelector(".codewheel-auto-typing");
     
