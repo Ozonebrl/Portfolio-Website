@@ -23,7 +23,7 @@ ul.navbar li a:hover {
 }
 
 ul.navbar li a.active {
-  background-color: #36d30b; /* Change the background color for the active page */
+  background-color: #0baed3; /* Change the background color for the active page */
 }
 
 /* Responsive Styles */
