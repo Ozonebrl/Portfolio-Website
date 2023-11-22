@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     //variables
-    var words=["Web Designer","Digital Marketer","Java Developer","Python Developer","FreeLancer","Youtuber","Graphics Designer","CEO"],
+    var words=["Web Designer","Digital Marketer","Java Developer","Python Developer","FreeLancer","Youtuber","Graphics Designer"],
     part,
     i=0,
     offset=0,
@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
     forwards=true,
     skip_count=0,
     skip_delay=17,
-    speed=70;
+    speed=10;
     
     const CWAutoTyping=document.querySelector(".codewheel-auto-typing");
     
