@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
             if(forwards){
                 if(offset>=words[i].length){
                     
-                    ++skip_count;
+                    ++skip_count;432
                     if(skip_count==skip_delay){
                         forwards =false;
                         skip_count=0;
