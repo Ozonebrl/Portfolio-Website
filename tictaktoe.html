@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <style>
+        /* styles.css */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: 2px solid #000;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.cell:hover {
+    background-color: #f0f0f0;
+}
+
+.game-info {
+    margin-top: 20px;
+}
+
+#resetButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+    </style>
+    <h1>Tic Tac Toe</h1>
+    <div class="game-board" id="gameBoard">
+        <div class="cell" data-index="0"></div>
+        <div class="cell" data-index="1"></div>
+        <div class="cell" data-index="2"></div>
+        <div class="cell" data-index="3"></div>
+        <div class="cell" data-index="4"></div>
+        <div class="cell" data-index="5"></div>
+        <div class="cell" data-index="6"></div>
+        <div class="cell" data-index="7"></div>
+        <div class="cell" data-index="8"></div>
+    </div>
+    <div class="game-info">
+        <p id="status">Player X's turn</p>
+        <button id="resetButton">Restart Game</button>
+    </div>
+    <script >
+        // script.js
+document.addEventListener("DOMContentLoaded", () => {
+    const cells = document.querySelectorAll(".cell");
+    const statusText = document.getElementById("status");
+    const resetButton = document.getElementById("resetButton");
+
+    let currentPlayer = "X";
+    let board = ["", "", "", "", "", "", "", "", ""];
+
+    const winningCombinations = [
+        [0, 1, 2],
+        [3, 4, 5],
+        [6, 7, 8],
+        [0, 3, 6],
+        [1, 4, 7],
+        [2, 5, 8],
+        [0, 4, 8],
+        [2, 4, 6]
+    ];
+
+    const checkWinner = () => {
+    for (const combination of winningCombinations) {
+        const [a, b, c] = combination;
+        if (board[a] && board[a] === board[b] && board[a] === board[c]) {
+            // Display a popup alert with the winning message
+            alert(`Player ${currentPlayer} wins!`);
+            return true;
+        }
+    }
+
+    if (!board.includes("")) {
+        alert("It's a tie!");
+        return true;
+    }
+
+    return false;
+};
+
+
+    const handleCellClick = (e) => {
+        const cell = e.target;
+        const cellIndex = cell.getAttribute("data-index");
+
+        if (board[cellIndex] !== "" || checkWinner()) {
+            return;
+        }
+
+        board[cellIndex] = currentPlayer;
+        cell.textContent = currentPlayer;
+
+        if (checkWinner()) {
+            return;
+        }
+
+        currentPlayer = currentPlayer === "X" ? "O" : "X";
+        statusText.textContent = `Player ${currentPlayer}'s turn`;
+    };
+
+    const resetGame = () => {
+        board = ["", "", "", "", "", "", "", "", ""];
+        cells.forEach(cell => cell.textContent = "");
+        currentPlayer = "X";
+        statusText.textContent = `Player X's turn`;
+    };
+
+    cells.forEach(cell => cell.addEventListener("click", handleCellClick));
+    resetButton.addEventListener("click", resetGame);
+});
+
+    </script>
+</body>
+</html>
