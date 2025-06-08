@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Ozone Baral | Racing to Digital Excellence</title>
+  <title>PORTFOLIO</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -12,10 +12,11 @@
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
+
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&family=Titillium+Web:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -25,615 +26,8 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
-  <style>
-    :root {
-      --ferrari-red: #e32121;
-      --racing-red: #d40000;
-      --carbon-black: #1a1a1a;
-      --racing-yellow: #ffd700;
-      --speed-white: #ffffff;
-      --grid-gray: #333333;
-      --podium-gold: #ffd700;
-      --podium-silver: #c0c0c0;
-      --podium-bronze: #cd7f32;
-    }
+  <link href="assets/css/main.css" rel="stylesheet">
 
-    body {
-      font-family: 'Titillium Web', sans-serif;
-      background-color: var(--carbon-black);
-      color: var(--speed-white);
-    }
-
-    h1, h2, h3, h4, h5, h6 {
-      font-family: 'Racing Sans One', cursive;
-      color: var(--racing-yellow);
-    }
-
-    .dark-background {
-      background-color: var(--carbon-black);
-      color: var(--speed-white);
-    }
-
-    .light-background {
-      background-color: #2a2a2a;
-      color: var(--speed-white);
-    }
-
-    /* Header Styles */
-    .header {
-      background: linear-gradient(to bottom, #000000, var(--carbon-black));
-      border-right: 2px solid var(--ferrari-red);
-    }
-
-    .sitename {
-      color: var(--ferrari-red);
-      text-shadow: 0 0 5px rgba(227, 33, 33, 0.5);
-      letter-spacing: 1px;
-    }
-
-    .profile-img img {
-      border: 3px solid var(--ferrari-red);
-      box-shadow: 0 0 15px rgba(227, 33, 33, 0.5);
-    }
-
-    .social-links a {
-      color: var(--speed-white);
-      background: var(--grid-gray);
-      border-radius: 50%;
-      width: 36px;
-      height: 36px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      transition: all 0.3s;
-      margin: 0 5px;
-    }
-
-    .social-links a:hover {
-      background: var(--ferrari-red);
-      transform: scale(1.1);
-    }
-
-    /* Navigation */
-    .navmenu ul li a {
-      color: var(--speed-white);
-      transition: all 0.3s;
-    }
-
-    .navmenu ul li a:hover, .navmenu ul li a.active {
-      color: var(--ferrari-red);
-    }
-
-    .navmenu ul li a .navicon {
-      margin-right: 8px;
-      color: var(--ferrari-red);
-    }
-
-    /* Hero Section */
-    .hero {
-      position: relative;
-      overflow: hidden;
-    }
-
-    .hero::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9));
-      z-index: 1;
-    }
-
-    .hero img {
-      object-fit: cover;
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-
-    .hero .container {
-      position: relative;
-      z-index: 2;
-      text-align: center;
-      padding-top: 150px;
-      padding-bottom: 100px;
-    }
-
-    .hero h2 {
-      font-size: 3.5rem;
-      margin-bottom: 20px;
-      color: var(--ferrari-red);
-      text-shadow: 0 0 10px rgba(227, 33, 33, 0.7);
-    }
-
-    .hero p {
-      font-size: 1.5rem;
-      margin-bottom: 30px;
-    }
-
-    .typed {
-      color: var(--racing-yellow);
-    }
-
-    .typed-cursor {
-      color: var(--ferrari-red);
-    }
-
-    /* Section Titles */
-    .section-title h2 {
-      position: relative;
-      display: inline-block;
-      padding-bottom: 15px;
-    }
-
-    .section-title h2::after {
-      content: '';
-      position: absolute;
-      display: block;
-      width: 60px;
-      height: 3px;
-      background: var(--ferrari-red);
-      bottom: 0;
-      left: calc(50% - 30px);
-    }
-
-    .section-title p {
-      max-width: 800px;
-      margin: 0 auto;
-    }
-
-    /* About Section */
-    .about .content h2 {
-      color: var(--ferrari-red);
-    }
-
-    .about .content ul li {
-      margin-bottom: 10px;
-    }
-
-    .about .content ul i {
-      color: var(--ferrari-red);
-      margin-right: 10px;
-    }
-
-    /* Stats Section */
-    .stats-item {
-      background: rgba(26, 26, 26, 0.8);
-      border-left: 3px solid var(--ferrari-red);
-      padding: 20px;
-      transition: all 0.3s;
-    }
-
-    .stats-item:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 5px 15px rgba(227, 33, 33, 0.3);
-    }
-
-    .stats-item i {
-      font-size: 2rem;
-      color: var(--ferrari-red);
-    }
-
-    .stats-item .purecounter {
-      font-size: 2.5rem;
-      font-weight: 700;
-      color: var(--speed-white);
-    }
-
-    /* Skills Section */
-    .skills .progress {
-      height: 10px;
-      background-color: var(--grid-gray);
-      border-radius: 5px;
-      margin-bottom: 20px;
-    }
-
-    .skills .progress-bar {
-      background-color: var(--ferrari-red);
-      border-radius: 5px;
-    }
-
-    .skills .skill span {
-      color: var(--speed-white);
-    }
-
-    .skills .skill i {
-      color: var(--racing-yellow);
-    }
-
-    /* Resume Section */
-    .resume .resume-item {
-      background: rgba(26, 26, 26, 0.8);
-      padding: 20px;
-      margin-bottom: 20px;
-      border-left: 3px solid var(--ferrari-red);
-    }
-
-    .resume .resume-item h4 {
-      color: var(--ferrari-red);
-    }
-
-    .resume .resume-item h5 {
-      color: var(--racing-yellow);
-    }
-
-    .resume .resume-item p em {
-      color: #ccc;
-    }
-
-    .resume .resume-item ul {
-      padding-left: 20px;
-    }
-
-    .resume .resume-item ul li {
-      margin-bottom: 5px;
-    }
-
-    /* Portfolio Section */
-    .portfolio .portfolio-item {
-      position: relative;
-      overflow: hidden;
-      border-radius: 5px;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-      transition: all 0.3s;
-    }
-
-    .portfolio .portfolio-item:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 25px rgba(227, 33, 33, 0.4);
-    }
-
-    .portfolio .portfolio-content {
-      position: relative;
-    }
-
-    .portfolio .portfolio-info {
-      position: absolute;
-      bottom: -100%;
-      left: 0;
-      right: 0;
-      background: rgba(227, 33, 33, 0.9);
-      padding: 15px;
-      transition: all 0.3s;
-    }
-
-    .portfolio .portfolio-item:hover .portfolio-info {
-      bottom: 0;
-    }
-
-    .portfolio .portfolio-info h4 {
-      color: var(--speed-white);
-      font-size: 1.2rem;
-      margin-bottom: 5px;
-    }
-
-    .portfolio .portfolio-info p {
-      color: #eee;
-      font-size: 0.9rem;
-      margin-bottom: 10px;
-    }
-
-    .portfolio .portfolio-info a {
-      color: var(--speed-white);
-      margin-right: 10px;
-      font-size: 1.2rem;
-    }
-
-    .portfolio .portfolio-info a:hover {
-      color: var(--racing-yellow);
-    }
-
-    /* Services Section */
-    .services .service-item {
-      background: rgba(26, 26, 26, 0.8);
-      padding: 20px;
-      border-radius: 5px;
-      transition: all 0.3s;
-      border-bottom: 3px solid transparent;
-    }
-
-    .services .service-item:hover {
-      transform: translateY(-5px);
-      border-bottom-color: var(--ferrari-red);
-      box-shadow: 0 5px 15px rgba(227, 33, 33, 0.3);
-    }
-
-    .services .service-item .icon {
-      font-size: 2rem;
-      color: var(--ferrari-red);
-      margin-right: 15px;
-    }
-
-    .services .service-item h4 a {
-      color: var(--speed-white);
-      transition: all 0.3s;
-    }
-
-    .services .service-item h4 a:hover {
-      color: var(--ferrari-red);
-    }
-
-    /* Testimonials Section */
-    .testimonials .testimonial-item {
-      background: rgba(26, 26, 26, 0.8);
-      padding: 20px;
-      border-radius: 5px;
-      position: relative;
-      border-left: 3px solid var(--ferrari-red);
-    }
-
-    .testimonials .testimonial-item p {
-      font-style: italic;
-      margin-bottom: 20px;
-    }
-
-    .testimonials .testimonial-item p i {
-      color: var(--ferrari-red);
-      font-size: 1.2rem;
-    }
-
-    .testimonials .testimonial-item .testimonial-img {
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
-      border: 3px solid var(--ferrari-red);
-      margin-bottom: 10px;
-    }
-
-    .testimonials .testimonial-item h3 {
-      font-size: 1.2rem;
-      color: var(--speed-white);
-    }
-
-    .testimonials .testimonial-item h4 {
-      font-size: 0.9rem;
-      color: #ccc;
-    }
-
-    /* Contact Section */
-    .contact .info-wrap {
-      background: rgba(26, 26, 26, 0.8);
-      padding: 20px;
-      border-radius: 5px;
-      border-left: 3px solid var(--ferrari-red);
-    }
-
-    .contact .info-item {
-      margin-bottom: 20px;
-    }
-
-    .contact .info-item i {
-      font-size: 1.5rem;
-      color: var(--ferrari-red);
-      margin-right: 15px;
-    }
-
-    .contact .info-item h3 {
-      font-size: 1.1rem;
-      color: var(--speed-white);
-    }
-
-    .contact .info-item p {
-      color: #ccc;
-    }
-
-    .contact .php-email-form {
-      background: rgba(26, 26, 26, 0.8);
-      padding: 20px;
-      border-radius: 5px;
-      border-left: 3px solid var(--ferrari-red);
-    }
-
-    .contact .php-email-form label {
-      color: var(--speed-white);
-    }
-
-    .contact .php-email-form .form-control {
-      background-color: #333;
-      border: 1px solid #444;
-      color: var(--speed-white);
-    }
-
-    .contact .php-email-form .form-control:focus {
-      border-color: var(--ferrari-red);
-      box-shadow: 0 0 0 0.2rem rgba(227, 33, 33, 0.25);
-    }
-
-    .contact .php-email-form button[type="submit"] {
-      background: var(--ferrari-red);
-      border: none;
-      padding: 10px 30px;
-      color: var(--speed-white);
-      transition: all 0.3s;
-      font-weight: 600;
-    }
-
-    .contact .php-email-form button[type="submit"]:hover {
-      background: #c00;
-    }
-
-    /* Footer */
-    .footer {
-      background: #000;
-      padding: 20px 0;
-      border-top: 2px solid var(--ferrari-red);
-    }
-
-    .footer .copyright {
-      color: #ccc;
-    }
-
-    .footer .credits {
-      color: #666;
-    }
-
-    .footer .credits a {
-      color: var(--ferrari-red);
-    }
-
-    /* Scroll Top */
-    #scroll-top {
-      background: var(--ferrari-red);
-      color: var(--speed-white);
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      z-index: 999;
-      opacity: 0;
-      visibility: hidden;
-      transition: all 0.3s;
-    }
-
-    #scroll-top.active {
-      opacity: 1;
-      visibility: visible;
-    }
-
-    #scroll-top:hover {
-      background: #c00;
-    }
-
-    /* Preloader */
-    #preloader {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: var(--carbon-black);
-      z-index: 9999;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    #preloader:before {
-      content: "";
-      width: 50px;
-      height: 50px;
-      border: 5px solid var(--grid-gray);
-      border-top-color: var(--ferrari-red);
-      border-radius: 50%;
-      animation: spin 1s linear infinite;
-    }
-
-    @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
-
-    /* Racing Stripes Effect */
-    .racing-stripes {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: repeating-linear-gradient(
-        45deg,
-        rgba(0, 0, 0, 0.1),
-        rgba(0, 0, 0, 0.1) 10px,
-        rgba(227, 33, 33, 0.1) 10px,
-        rgba(227, 33, 33, 0.1) 20px
-      );
-      pointer-events: none;
-      z-index: 0;
-    }
-
-    /* Button Styles */
-    .btn-primary {
-      background-color: var(--ferrari-red);
-      border-color: var(--ferrari-red);
-      color: white;
-      font-weight: bold;
-      padding: 10px 25px;
-      border-radius: 30px;
-      transition: all 0.3s;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      margin: 20px 0;
-      display: inline-block;
-    }
-
-    .btn-primary:hover {
-      background-color: #c00;
-      border-color: #c00;
-      transform: translateY(-2px);
-      box-shadow: 0 5px 15px rgba(227, 33, 33, 0.4);
-    }
-
-    /* Racing Number Badge */
-    .racing-number {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      background-color: var(--ferrari-red);
-      color: white;
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: 'Racing Sans One', cursive;
-      font-size: 1.5rem;
-      z-index: 10;
-    }
-
-    /* Track Lines Animation */
-    @keyframes trackLines {
-      0% { background-position: 0 0; }
-      100% { background-position: 0 30px; }
-    }
-
-    .track-effect {
-      position: relative;
-      overflow: hidden;
-    }
-
-    .track-effect::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 100%;
-      background: repeating-linear-gradient(
-        to bottom,
-        transparent,
-        transparent 10px,
-        rgba(227, 33, 33, 0.1) 10px,
-        rgba(227, 33, 33, 0.1) 15px
-      );
-      animation: trackLines 1s linear infinite;
-      z-index: 0;
-    }
-
-    /* Responsive Adjustments */
-    @media (max-width: 768px) {
-      .hero h2 {
-        font-size: 2.5rem;
-      }
-      
-      .hero p {
-        font-size: 1.2rem;
-      }
-      
-      .section-title h2 {
-        font-size: 2rem;
-      }
-    }
-  </style>
 
 </head>
 
@@ -647,10 +41,11 @@
     </div>
 
     <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+     
+       
       <h1 class="sitename">Ozone Baral</h1>
     </a>
 
-    <div class="racing-number">07</div>
 
     <div class="social-links text-center">
       <a href="https://github.com/Ozonebrl" class="Github"><i class="bi bi-github"></i></a>
@@ -662,40 +57,41 @@
 
     <nav id="navmenu" class="navmenu">
       <ul>
-        <li><a href="#hero" class="active"><i class="bi bi-speedometer2 navicon"></i>Pit Lane</a></li> 
-        <li><a href="#about"><i class="bi bi-person-check navicon"></i> Driver Profile</a></li>
-        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Race History</a></li>
-        <li><a href="#portfolio"><i class="bi bi-trophy navicon"></i> Podium Finishes</a></li>
-        <li><a href="#services"><i class="bi bi-gear navicon"></i> Team Services</a></li>
-        <li><a href="#contact"><i class="bi bi-flag navicon"></i> Contact Team</a></li>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li> 
+        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
       </ul>
     </nav>
 
   </header>
 
+  
+
   <main class="main">
 
     <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background track-effect">
-      <div class="racing-stripes"></div>
-      <img src="assets/img/f1-track.jpg" alt="" data-aos="fade-in" class="">
+    <section id="hero" class="hero section dark-background">
+
+      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in" class="">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <h2>Ozone Baral</h2>
         <p>I'm <span class="typed" data-typed-items="Designer, Developer, Freelancer, Content Creator, IT Specialist, Game Developer"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
-        <div class="d-flex justify-content-center">
-          <a href="#about" class="btn btn-primary">Start Engine</a>
-        </div>
       </div>
 
     </section><!-- /Hero Section -->
 
+
+    
     <!-- About Section -->
     <section id="about" class="about section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Driver Profile</h2>
+        <h2>About</h2>
         <p>I am a multifaceted professional working as a programmer, content creator, designer, and freelancer.
           My passion for continuous learning drives me to constantly acquire new skills and knowledge.
            In my leisure time, I enjoy immersing myself in books, and I am an avid fan of cricket and Formula 1 racing.</p>
@@ -703,9 +99,12 @@
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
+
+
+        
         <div class="row gy-4 justify-content-center">
           <div class="col-lg-4">
-            <img src="assets/img/my-profile-img.jpg" class="img-fluid" alt="" style="border: 3px solid var(--ferrari-red);">
+            <img src="assets/img/my-profile-img.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 content">
             <h2>UI/UX Designer &amp; Web Developer.</h2>
@@ -751,25 +150,25 @@
 
           <div class="col-lg-3 col-md-6">
             <div class="stats-item">
-              <i class="bi bi-flag"></i>
+              <i class="bi bi-emoji-smile"></i>
               <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Races Completed</strong> </p>
+              <p><strong>Happy Clients</strong> </p>
             </div>
           </div><!-- End Stats Item -->
 
           <div class="col-lg-3 col-md-6">
             <div class="stats-item">
-              <i class="bi bi-trophy"></i>
+              <i class="bi bi-journal-richtext"></i>
               <span data-purecounter-start="0" data-purecounter-end="52" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Podium Finishes</strong> <span>Completed</span></p>
+              <p><strong>Projects</strong> <span>Completed</span></p>
             </div>
           </div><!-- End Stats Item -->
 
           <div class="col-lg-3 col-md-6">
             <div class="stats-item">
-              <i class="bi bi-speedometer2"></i>
+              <i class="bi bi-headset"></i>
               <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Fastest Laps</strong> <span>in Technical Aspects</span></p>
+              <p><strong>Hours Of Support</strong> <span>in Technical Aspects</span></p>
             </div>
           </div><!-- End Stats Item -->
 
@@ -777,7 +176,7 @@
             <div class="stats-item">
               <i class="bi bi-people"></i>
               <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Team Members</strong> <span>Collaborated</span></p>
+              <p><strong>Hard Workers</strong> <span>Collaborated</span></p>
             </div>
           </div><!-- End Stats Item -->
 
@@ -792,8 +191,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Performance Metrics</h2>
-        <p>These are my technical skills measured in racing terms</p>
+        <h2>Skills</h2>
+        <p>His needs are met by something that indeed allows him to escape, and it should be done with care</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -885,20 +284,18 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Race History</h2>
+        <h2>Resume</h2>
         <p>Versatile and dedicated professional with over two years of experience in UI/UX and web development.
            Adept at programming, content creation, and design, I thrive in freelance environments, delivering high-quality work tailored to client needs. Passionate about continuous learning, I stay ahead of industry trends and technologies.
            In addition to my professional pursuits, I enjoy reading, exploring new skills, and following cricket and Formula 1.</p>
       </div><!-- End Section Title -->
-      <div class="text-center">
-        <a href="assets/img/Ozone Baral Resume.pdf" download="Ozone_Baral_Resume.pdf" class="btn btn-primary">Download Race Data</a>
-      </div>
+      <a href="assets/img/Ozone Baral Resume.pdf" download="Ozone_Baral_Resume.pdf" class="btn btn-primary">Download Resume</a>
       <div class="container">
 
         <div class="row">
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Career Summary</h3>
+            <h3 class="resume-title">Sumary</h3>
 
             <div class="resume-item pb-0">
               <h4>Ozone Baral</h4>
@@ -966,7 +363,7 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Podium Finishes</h2>
+        <h2>Portfolio</h2>
         <p>These are the projects that i have done.</p>
       </div><!-- End Section Title -->
 
@@ -1141,7 +538,7 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Team Services</h2>
+        <h2>Services</h2>
         <p>Services What I provide</p>
       </div><!-- End Section Title -->
 
@@ -1149,8 +546,11 @@
 
         <div class="row gy-4">
 
+
+          
+
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon flex-shrink-0"><i class="bi bi-speedometer2"></i></div>
+            <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
             <div>
               <h4 class="title"><a href="service-details.html" class="stretched-link">Web Development</a></h4>
               <p class="description">I provide both static and semi-dynamic website according to the requirements of clients.</p>
@@ -1159,7 +559,7 @@
           <!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon flex-shrink-0"><i class="bi bi-palette"></i></div>
+            <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
             <div>
               <h4 class="title"><a href="service-details.html" class="stretched-link">Web Designing</a></h4>
               <p class="description">I provide the designs, frameworks for the websites aswell as logo designs.</p>
@@ -1167,7 +567,7 @@
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon flex-shrink-0"><i class="bi bi-graph-up-arrow"></i></div>
+            <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
             <div>
               <h4 class="title"><a href="service-details.html" class="stretched-link">Search Engine Optimization</a></h4>
               <p class="description">I will make your business visible frequently by optimizing the search engine so that interaction and reaches will be more.</p>
@@ -1175,7 +575,7 @@
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
-            <div class="icon flex-shrink-0"><i class="bi bi-tools"></i></div>
+            <div class="icon flex-shrink-0"><i class="bi bi-binoculars"></i></div>
             <div>
               <h4 class="title"><a href="service-details.html" class="stretched-link">Maintenance and Support</a></h4>
               <p class="description">I provide technical support through phone calls which i can solve.</p>
@@ -1183,7 +583,7 @@
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon flex-shrink-0"><i class="bi bi-gear"></i></div>
+            <div class="icon flex-shrink-0"><i class="bi bi-brightness-high"></i></div>
             <div>
               <h4 class="title"><a href="service-details.html" class="stretched-link">Custom Softwares</a></h4>
               <p class="description">I can provide custom softwares for your business according to your needs.</p>
@@ -1191,7 +591,7 @@
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
-            <div class="icon flex-shrink-0"><i class="bi bi-clipboard-data"></i></div>
+            <div class="icon flex-shrink-0"><i class="bi bi-calendar4-week"></i></div>
             <div>
               <h4 class="title"><a href="service-details.html" class="stretched-link">Consultation and Project Management</a></h4>
               <p class="description">I can provide you consultation and manage your projects.</p>
@@ -1209,7 +609,7 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Team Radio</h2>
+        <h2>Testimonials</h2>
         <p>Persons I worked with</p>
       </div><!-- End Section Title -->
 
@@ -1321,7 +721,7 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Contact Team</h2>
+        <h2>Contact Me </h2>
         <p>Review me Thats how I improve</p>
       </div><!-- End Section Title -->
 
@@ -1335,7 +735,7 @@
               <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
                 <i class="bi bi-geo-alt flex-shrink-0"></i>
                 <div>
-                  <h3>Team Headquarters</h3>
+                  <h3>Address</h3>
                   <p>Pokhara-13, Kaski</p>
                 </div>
               </div><!-- End Info Item -->
@@ -1343,7 +743,7 @@
               <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
                 <i class="bi bi-telephone flex-shrink-0"></i>
                 <div>
-                  <h3>Team Radio</h3>
+                  <h3>Call Us</h3>
                   <p>+977 9869141544</p>
                 </div>
               </div><!-- End Info Item -->
@@ -1351,7 +751,7 @@
               <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
                 <i class="bi bi-envelope flex-shrink-0"></i>
                 <div>
-                  <h3>Team Email</h3>
+                  <h3>Email me</h3>
                   <p>ozonebrl7@gmail.com</p>
                 </div>
               </div><!-- End Info Item -->
